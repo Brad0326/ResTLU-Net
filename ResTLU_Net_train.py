@@ -11,7 +11,6 @@ import torch.optim as optim
 import os, sys, pickle
 import argparse
 import numpy as np
-import U_Net_model
 import ResTLU_Net_model
 
 start = time.time()
