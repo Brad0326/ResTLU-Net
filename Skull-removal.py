@@ -2,7 +2,7 @@
 import torch
 import torch.nn as nn
 from function import predict_volumes
-from Re_UNet import Re_UNet2d as UNet2d
+import ResTLU_Net_model
 import os, sys
 import argparse
 
@@ -30,7 +30,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
     # Define whether show slice results
 
-    train_model = UNet2d(dim_in=args.input_slice, num_conv_block=args.conv_block, kernel_root=args.kernel_root)
+    train_model = ResTLU_Net_model.Re_UNet2d(dim_in=args.input_slice, num_conv_block=args.conv_block, kernel_root=args.kernel_root)
     checkpoint = torch.load(args.predict_model, map_location={'cuda:0': 'cpu'})
     train_model.load_state_dict(checkpoint['state_dict'])
     model = nn.Sequential(train_model, nn.Softmax2d())
