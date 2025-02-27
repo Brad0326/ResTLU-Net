@@ -14,7 +14,7 @@ python Skull-removal.py -in [Your nii/nii.gz image file] -out [mask output PATH]
 
 ​		***After that, you can call the new model file to separate the skull.***
 
-** **Since we are using the free Github, it is not possible to upload larger models. If you need our latest trained model, please get it from [Baidu Netdisk](https://pan.baidu.com/s/18sHNXeyhJPo72kOdoJxkFg?pwd=afan).**
+** **Since we are using the free Github, it is not possible to upload larger models. If you need our latest trained model, please get it from [Baidu Netdisk](https://pan.baidu.com/s/1axLM95zTI4YFUQnV40FCwQ?pwd=9hb7).**
 
 
 
